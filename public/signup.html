@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donors Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="containerindex">
+        <nav class="navbar">
+            <img class="logo" src="logo3.png"> 
+                <ul>
+                    <li><a onclick="location.href='login.html'">login in</a></li>
+                    </ul>
+         </nav>
+        
+        
+        
+
+
+        <div class="formbox">
+            <form id="register" class="input-group"  name="myform" onsubmit="someFunc(event)" action="/sign_up" method="POST">
+                <input type="text" class="input-field" placeholder="User Id " name="name" required>
+                <input type="email" class="input-field" placeholder="Email Id "name="email" required>
+                <input type="text" class="input-field" placeholder="Phone no: " name="phno" required>
+                <input type="password" class="input-field" placeholder="Enter Password" name="password" required>
+                <button class="submit-btn" type="submit" name="Register" >Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+<script>
+    
+    function someFunc(event)
+    {  
+    var letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/; 
+    
+    var txt1=document.myform.name.value;
+    
+    var numb=document.myform.phno.value;
+
+    var numb2=document.myform.password.value;
+    
+    
+    if(!txt1.match(letters))
+    {
+    event.preventDefault();
+    alert('Username must contain only aplhabets.');
+    return false;
+    }
+    
+    
+    
+    if(numb.length != 10) {
+    event.preventDefault();
+    alert('Please enter a valid phone number');  
+    return false;                 
+    
+    } 
+    if(numb2.length <6) {
+    event.preventDefault();
+    alert('Password must be between 6-10 characters');  
+    return false;                 
+    
+    } 
+    if(numb2.length >10) {
+    event.preventDefault();
+    alert('Password must be between 6-10 characters');  
+    return false;                 
+    } 
+    
+    alert("Succesfuly registered");
+    return true;
+    }
+    
+        </script>
+</html>

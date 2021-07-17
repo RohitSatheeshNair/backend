@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donors Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="containerindex">
+        <nav class="navbar">
+            <img class="logo" src="logo3.png"> 
+                <ul>
+                    <li><a onclick="location.href='signup.html'">Sign up</a></li>
+                    </ul>
+         </nav>
+        <div class="formbox">
+      
+            <form id="login" class="input-group " name="myformlogin"  onsubmit="someFunc(event)" action="/log_in" method="GET" >
+                <input type="email" name="email" id="username" class="input-field"  placeholder="Email ID "required >
+                <input type="password" name="pass" id="pass" class="input-field" placeholder="Enter Password" required >
+                <p id="alertmsg1" style="display:none;color:red">Password must be more than 6 characters </p>
+                <button type="submit" name='save' class="submit-btn"  >Log In</button>
+            </form>
+        </div>
+</body>
+
+
+
+<script>
+    
+    function someFunc(event)
+    {  
+   
+    var numb2=document.myformlogin.pass.value;
+         
+    if(numb2.length <6) {
+    event.preventDefault();
+    alert('Password must be between 6-10 characters');  
+    return false;                 
+    
+    } 
+    if(numb2.length >10) {
+    event.preventDefault();
+    alert('Password must be between 6-10 characters');  
+    return false;                 
+    } 
+    
+    
+    }
+    
+        </script>
+
+
+</html>

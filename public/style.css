@@ -1,0 +1,236 @@
+.navbar{
+    height :130px;
+    width: auto;
+    background: rgb(3, 1, 1);
+}
+body,html{
+    height: 100%;
+    margin: 0;
+}
+.container{
+    background-image: url(home.jpg);
+    height: 670px;
+    width: auto;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} 
+.containerindex{
+    background-image: url(homeimage.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} 
+.logo{
+    width:280px;
+    height: 100px;
+    padding: 20px  20px;
+}
+.logo1{
+    width:280px;
+    height: 150px;
+    padding: 20px  20px;
+}
+.navbar ul{
+    float:right;
+    margin-right: 100px; 
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0px 8x;
+    display: inline-block;
+    line-height: 100px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: x-large;
+    padding: 9px 15px;
+    font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .4s;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    color:white;
+    background-color: #ffad06;
+    border: 1px solid ,#ff105f;
+    outline: none;
+    cursor: pointer;
+    border-radius:  25px;
+    
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: black;
+    border-radius:  25px;
+}
+.welcomelogin{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+  
+    user-select: none;
+}
+.welcomelogin h1{
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius:  25px;
+    color: black;
+    font-family:sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    width: 700px;
+    outline: none;
+    text-align: center;
+}
+.welcomelogin h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    color:white;
+    font-size:medium;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 700px;
+    text-align: center;
+}
+.welcomehomepage{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    font-family:  sans-serif;
+    user-select: none;
+}
+
+
+.welcomehomepage h1{
+    color:white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: left;
+}
+.welcomehomepage h4{
+    color:white;
+    font-size:large;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 885px;
+    text-align: left;
+}
+.welcomehomepage .donatenow{
+    margin: 35px 280px
+}
+
+.donatenow button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+    background-color: #ffad06;
+    border: 1px solid ,#ff105f;
+    outline: none;
+    cursor: pointer;
+    border-radius:  25px;
+    transition: .5s;
+}
+.navbar ul li button{
+    text-decoration: none;
+    font-size: x-large;
+    padding: 9px 10px;
+    font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    color:white;
+    background-color:#ffad06;
+    border: 1px solid ,#ff105f;
+    outline: none;
+    cursor: pointer;
+    border-radius:  25px;
+    transition: .4s;
+}
+.navbar ul li button:hover{
+    background:black;
+}
+
+.donatenow button:hover{
+    background:whitesmoke;
+}
+.formbox{
+            width: 380px;
+            height: 450px;
+            position: relative;
+            margin: 6% auto;
+            background:rgba(238, 235, 235, 0.658);
+            padding: 2px;
+            border-radius: 15%;
+}
+.buttonbox{
+    width: 250px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow:  0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.togglebtn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#bn{
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 25px;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+#login{
+    left:50px;
+}
+#Register{
+    left: 50px;
+}
+
+
+
+

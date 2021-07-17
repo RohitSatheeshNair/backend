@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background: wheat;
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+    position: fixed;
+    float: left;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #000000;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.0);
+}
+
+.wrapper .navbar{
+   float: left;
+   height: 100%;
+}   
+
+.wrapper .navbar .profile_wrap{
+    padding: 2px;
+    text-align: center;
+}
+
+.wrapper .navbar .profile_wrap .profile_info .role{
+    font-weight: 600;
+    font-size: 15px;
+    color: #223f61;
+}
+
+.wrapper .navbar ul{
+    padding: 30px 40px;
+}
+
+.wrapper .navbar ul li > a{
+    display: flex;
+    position: relative;
+    font-size: 17px;
+    padding: 13px;
+    height: 50px;
+    color: #02e8f8;
+    font-weight: 400;
+    transition: all 1s ease; 
+    border-bottom: 1px solid white;
+    line-height: 14px;
+    list-style: none;
+    border-top: 1px solid white;
+}
+
+.wrapper .navbar ul li a > span{
+    display: inline-block;
+    
+}
+
+ a.active .title_2,
+ a:hover .title_2
+ {
+     color: #ffffff;
+     font-weight: 600;
+ }
+
+ .main{
+    width: 90%; 
+    margin: auto;
+    padding: 20px 60px 20px 275px; 
+    text-align: justify;
+    font: 1em sans-serif;
+
+ }
+
+ .content {
+    background-image: url(des1.jpg);
+    
+    text-align: center;
+    font-size: x-large;
+    padding:24%;
+    height: 620px;
+        width: auto;
+        
+    }
+
+.main1
+{
+    background-color: rgb(214, 23, 49);
+    padding: 20px 30px 20px 300px;
+}
+    .content h1{
+        margin-left: 210px;
+        margin-top: -60px;
+        padding: -10px 21px 0px 20px;
+        color: black;
+    }
+
+    .content2 {
+        background-image: url(des2.jpg);
+        
+        text-align: center;
+        font-size: x-large;
+        padding:24%;
+        height: 620px;
+            width: auto;
+            
+        }
+
+    .main2
+    {
+        background-color: rgb(41, 40, 133);
+        margin: 0;
+        
+        padding: 20px 10px 10px 300px;
+    }
+        .content2 h1{
+            margin-left: 210px;
+            margin-top: -60px;
+            padding: -10px 21px 0px 20px;
+            color: white;
+        }
+
+        .content3 {
+            background-image: url(des7.jpg);
+            
+            text-align: center;
+            font-size: x-large;
+            padding:24%;
+            height: 620px;
+                width: auto;
+                
+            }
+        
+        .main3
+        {
+            background-color: rgb(211, 77, 171);
+            padding: 20px 30px 20px 300px;
+        }
+            .content3 h1{
+                margin-left: 210px;
+                margin-top: -60px;
+                padding: -10px 21px 0px 20px;
+                color: white;
+            }
+
+            .content4 {
+                background-image: url(des12.jpg);
+                
+                text-align: center;
+                font-size: x-large;
+                padding:24%;
+                height: 620px;
+                    width: auto;
+                    
+                }
+
+            .main4
+            {
+                background-color: rgb(155, 57, 33);
+                padding: 20px 30px 20px 300px;
+            }
+                .content4 h1{
+                    margin-left: 210px;
+                    margin-top: -60px;
+                    padding: -10px 21px 0px 20px;
+                    color: white;
+                }
+
+                .content5 {
+                    background-image: url(des5.jpg);
+                    
+                    text-align: center;
+                    font-size: x-large;
+                    padding:24%;
+                    height: 620px;
+                        width: auto;
+                        
+                    }
+
+                .main5
+                {
+                  background-color: rgb(59, 127, 150);
+                  padding: 20px 30px 20px 300px;
+                }
+                    .content5 h1{
+                        margin-left: 210px;
+                        margin-top: -60px;
+                        padding: -10px 21px 0px 20px;
+                        color: white;
+                    }
+
+
+
+
+                    .bar{
+                        height :130px;
+                        width: 1550px;
+                        position: fixed;
+                        background: rgb(3, 1, 1);
+                    }
+                    .logo1{
+                        width:250px;
+                        height: 150px;
+                        padding: 20px ;
+                    }
+                    .bar ul{
+                        float:right;
+                        margin-right: 100px; 
+                    }
+                    .bar ul li{
+                        list-style: none;
+                        margin: 0px 8x;
+                        display: inline-block;
+                        line-height: 100px;
+                    }
+                    .bar ul li a{
+                        text-decoration: none;
+                        font-size: x-large;
+                        padding: 9px 15px;
+                        font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        transition: .4s;
+                        height: 50px;
+                        width: 150px;
+                        font-weight: bold;
+                        color:white;
+                        background-color: #ffad06;
+                        border: 1px solid ,#ff105f;
+                        outline: none;
+                        cursor: pointer;
+                        border-radius:  25px;
+                        
+                    }
+                    .bar ul li a.active,
+                    .bar ul li a:hover{
+                        background: black;
+                        border-radius:  25px;
+                    }
+                    .bar ul li button{
+                        text-decoration: none;
+                        font-size: x-large;
+                        padding: 9px 10px;
+                        font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        height: 50px;
+                        width: 150px;
+                        font-weight: bold;
+                        color:white;
+                        background-color:#ffad06;
+                        border: 1px solid ,#ff105f;
+                        outline: none;
+                        cursor: pointer;
+                        border-radius:  25px;
+                        transition: .4s;
+                    }
+                    .bar ul li button:hover{
+                        background:black;
+                    }
+                    .container{
+                        margin: 0;
+                        
+                        background-color: black;
+                        height: 100%;
+                    }

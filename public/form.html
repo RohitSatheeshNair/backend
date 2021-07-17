@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+
+<head> 
+    <title> BLOOD DONATION REGISTRATION FORM </title>
+    <link rel="stylesheet" href="form2.css" />
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet"
+    type="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head> 
+<body> 
+    <div class="container">
+        <nav class="navbar">
+            <a href="homepage.html"><img class="logo1" src="logo3.png"> </a>
+            <ul>
+                <li><a onclick="location.href='homepage.html'">Home</a></li>
+                <li><a onclick="location.href='aboutus.html'">About us</a></li>
+                <li><button onclick="location.href='homepage.html#ft'" >Contact us</button></li>    
+            </ul>
+         </nav>
+         <div class="about">
+             <h1>
+            About Us
+          </h1>
+        </div>
+
+         </div>
+
+
+
+
+
+    <div class="regform" > <h1>Registration Form</h1> </div>
+
+<div class="main"> 
+   
+
+    <form name="myform" onsubmit="someFunc(event)" action="/form" method="POST" > 
+
+        <div id="name">
+        <h2 class="name">Name:</h2>
+        <label class="firstlabel">first name:</label> 
+        <input class="firstname" type="text" name="first_name" id="txt1" required>
+        <label class="lastlabel">last name:</label> 
+        <input class="lastname" type="text" name="last_name" id="txt2" required>
+        </div>
+
+
+        <h2 class="AGE">Age:</h2>
+        <label class="AGE"></label> 
+        <input class="age" type="number"onkeypress="return event.charCode >= 48" min="18" max="65"name="AGE" required >
+
+
+
+
+
+        <h2 class="SEX">Sex:</h2> 
+        <select class="option1" name="SEX" required>
+         <option value="">--Choose Option--</option>
+          <option> MALE </option>
+          <option> FEMALE </option>
+          <option> OTHER </option>
+        </select>   
+
+
+        <h2 class="Phone"> Phone:</h2>
+        <label class="countrycode">country code:</label> 
+        <select class="option2" name="countrycode">
+            <option  disabled="disabled" selected="selected">Select code:</option>
+            <option> <option data-countryCode="IN" value="91">India (+91)</option>
+            <option data-countryCode="ID"></option>
+            </select>   
+            <label class="phone-number">Phone Number:</label>
+           <input class="number" type="text"  name="phone" id="phone" required >
+
+
+           <h2 class="Blood-group">Blood group:</h2>
+        <select class="option3" name="Blood_group" required>
+            <option value="">--Choose Option</option>
+             <option> O+ve </option>
+             <option> O-ve </option>
+             <option> A+ve </option>
+             <option> A-ve </option>
+             <option> B+ve </option>
+             <option> B-ve </option>
+             <option> AB+ve </option>
+             <option> AB-ve </option>
+           </select>   
+<BR>
+    
+    <h2 class="Date">Date:</h2>
+    <input class="datepicker" id="datepicker" name="date" required>
+    
+    <br>
+    
+    
+    <h2 class="Time">Time:</h2>
+        <select class="option4" name="Time" required>
+            <option value="">--Choose Option</option>
+             <option> 2pm-4pm </option>
+             <option> 4pm-7pm </option>
+             <option> 6pm-8pm </option>
+            </select> 
+    
+
+        <h2 class="email">Email id:</h2> 
+        <input class="emailid" type="email" name="email">
+
+
+        <h2 class="Address">Address:</h2>
+        <input class="Addressid" type="text" name="Address" required><BR>
+
+        
+           
+            <h3 class="consent"> I agree that blood donation is a voluntary act and no amount of remuneration
+                                  has been offered by the   centre. I hearby agree to all the rules and regulations required to donated blood.</h3>
+            <input class="checkbox" type="checkbox" id="consent" name="consent" required>   
+
+      <BR>
+      <button class="btn2" type="submit" >REGISTER</button>
+
+      
+    </form>
+
+</div> 
+
+</body> 
+<script>
+$(function () {
+    $('#datepicker').datepicker({ minDate: 0}); 
+});
+function someFunc(event)
+{  
+var letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/; 
+
+var txt1=document.myform.first_name.value;
+
+var numb=document.myform.phone.value;
+
+var txt2=document.myform.last_name.value;
+
+if(!txt1.match(letters))
+{
+event.preventDefault();
+alert('Please fill First name with alphabets only.');
+return false;
+}
+
+if(!txt2.match(letters))
+{
+event.preventDefault();
+alert('Please fill lastname with alphabets only.');
+return false;
+}
+
+if(numb.length != 10) {
+event.preventDefault();
+alert('Please enter a valid phone number including area code');  
+return false;                 
+
+} 
+alert("Succesfuly registered");
+return true;
+}
+
+	</script>
+</HTML> 

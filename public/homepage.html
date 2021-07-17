@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donors Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="homepage.html">
+            <img class="logo1" src="logo3.png">
+        </a> 
+            <ul>
+                <li><a onclick="location.href='homepage.html'">Home</a></li>
+                <li><a onclick="location.href='aboutus.html'">About us</a></li>
+                <li><button onclick="bottomfunction()" id="botm" >Contact us</button></li>
+            </ul>
+         </nav>
+         <div class ="welcomehomepage">
+             <h1>Together we can</h1>
+             <h4>Giving back through life-changing experiences</h4>
+             <div class="donatenow">
+                 <button class="btn" onclick="location.href='form.html'">DONATE NOW</button>
+             </div>
+        </div>
+    </div>
+    
+    <div class="container1">
+        <div class="row">
+            <div class="image">
+                 <img src="redorn.jpg" >
+                 <div class="details">
+                    <h2>Why Give <span>Blood?</h2>
+                     <p>Know about why you should donate blood and the advantages of donating blood.</p>
+                 <div class="more">
+                    <a href="whygiveblood.html" class="read-more">Read <span>More</span></a>
+            </div>
+        </div>
+    </div>
+        
+        <div class="image">
+        <img src="gryeln.png" >
+        <div class="details">
+        <h2>Who Can <span>Give</span> <span>Blood?</span></h2>
+        <p>Know about who can donate blood and other details.</p>
+        <div class="more">
+        <a href="whocangiveblood.html" class="read-more">Read <span>More</span></a>
+        </div>
+        </div>
+        </div>
+
+
+        
+        <div class="image">
+        <img src="redpinkn.png">
+        <div class="details">
+        <h2>Am I eligible <span>to</span> <span>donate?</span></h2>
+        <p>Know about the eligibility criteria of a donor to donate blood.</p>
+        <div class="more">
+        <a href="canigive.html" class="read-more">Read <span>More</span></a>
+        </div>
+        </div>
+        </div>
+        
+        <div class="image">
+        <img src="blgrn.jpg" >
+        <div class="details">
+        <h2>Help us raise <span>Awareness!</span></h2>
+        <p>Know about how you could contribute in raising awareness about blood donation.</p>
+        <div class="more">
+        <a href="awareness.html" class="read-more">Read <span>More</span></a>
+        </div>
+        </div>
+        </div>
+        
+
+
+        <div class="image">
+            <img src="pinkpurn.jpg" >
+            <div class="details">
+            <h2>Donation  <span>Process</span></h2>
+            <p><br>Know more about it </p>
+            <div class="more">
+            <a href="process.html" class="read-more">Read <span>More</span></a>
+            </div>
+            </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        <div class="footer" id="ft">
+            <div class="main-content">
+              <div class="left box">
+                <h2>OUR MISSION</h2>
+        <div class="content">
+                  <p> We focus on making the maximum positive effort for our community. Our members and volunteers provide the momentum that helps us affect change. Using data driven models, we provide solutions that make a long-lasting difference.</p>
+        <div class="social">
+                    <a href=""><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href=""><span class="fab fa-instagram"></span></a>
+                    <a href=""><span class="fab fa-youtube"></span></a>
+                  </div>
+        </div>
+        </div>
+        <div class="center box">
+                <h2>Address</h2>
+        <div class="content">
+                  <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Corperation Circle, Millers road
+                    </span>
+                  </div>
+        <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+91 9765432100</span>
+                  </div>
+        <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">BloodDonation@gmail.com</span>
+                  </div>
+        </div>
+        </div>
+        <div class="right box">
+              <h2>Contact us</h2>
+    <div class="content">
+        <form action="/feedback" method="POST">
+        <div class="email">
+         <div class="text" name="email">Email </div>
+        <input type="email"  name="email"required>
+         </div>
+        <div class="msg">
+        <div class="text" >Message </div>
+        <textarea id=".msgForm" rows="2" cols="25"  name="msge" required></textarea> 
+                        <br />
+        <div class="btn"><button type="submit">Send</button>
+         </div>
+        </div>
+         </form>
+        <p class="cp-text">
+        © Copyright 2021 BloodDonorsClinic. All rights reserved.
+        </p>
+    </div>
+        
+        <script>
+        function bottomfunction()
+        {
+           document.body.scrollTop=1000;
+           document.documentElement.scrollTop=1000;
+        }
+        </script>
+
+
+</body>
+
+</html>
